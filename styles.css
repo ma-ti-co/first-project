@@ -1,3 +1,10 @@
+:root{
+    --color-1: #0b0829;
+    --color-2: #2c1e5f;
+    --color-3: #44a5cd;
+    --color-4: #51c4c1;
+}
+
 .stage{
     height:var(--height);
 }
