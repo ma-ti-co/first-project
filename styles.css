@@ -50,7 +50,34 @@
     display: grid;
     place-items: center;
 }
+.stage__separator{
+    background-color: var(--color);
+    height: 1px;
+    width: var(--width)!important;
+    margin: auto;
+}
 .stage__text{
     line-height: 1.75;
     max-width: 60ch;
+}
+
+/* STORY SECTION */
+@media (max-width:900px) {
+    .story__logo figure{
+        text-align: center;
+    }
+}
+
+
+
+/* UTILITIES */
+.py-xl{
+    padding-top:9rem;
+    padding-bottom:9rem;
+}
+.pt-xl{
+    padding-top:9rem;
+}
+.pb-xl{
+    padding-bottom:9rem;
 }
