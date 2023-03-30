@@ -23,7 +23,7 @@ header{
     margin-bottom:0px;
 }
 
-nav ul{
+header nav ul{
     list-style: none;
     color: #FFF;
     display: flex;
@@ -35,13 +35,43 @@ nav ul{
     flex-wrap: wrap;
 }
 
-nav a{
+header nav ul li{
+    margin-right: 15px;
+}
+
+header nav a{
     text-decoration: none;
     color: white;
+    white-space: nowrap;
+}
+
+header nav a:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 nav ul a.current{
     color:var(--color-4);
+}
+
+
+#nav-toggle{
+    display: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width:940px){
+    #nav-toggle{
+        display:block;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav ul{
+        display: none!important;
+    }
 }
 
 
@@ -59,7 +89,7 @@ nav ul a.current{
 }
 .stage__separator{
     background-color: var(--color);
-    height: 1px;
+    height: 2px;
     width: var(--width)!important;
     margin: auto;
 }
