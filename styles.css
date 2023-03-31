@@ -1,5 +1,9 @@
 /* SERIF FONT */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* GROTESK FONT 
+AVAILABLE IN 100, 400 (normal), 600
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
 
 :root{
     --color-1: #0b0829;
@@ -8,8 +12,22 @@
     --color-4: #51c4c1;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* FONT STYLES */
+
 h1, h2, h3, .text-serif{
     font-family: 'Playfair Display', serif;
+}
+
+.text-thin{
+    font-weight: 100;
+}
+strong, .text-thick{
+    font-weight: 600;
 }
 
 /* NAVIGATION */
