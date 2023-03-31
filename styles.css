@@ -15,6 +15,7 @@ AVAILABLE IN 100, 400 (normal), 600
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    cursor:url("./design-assets/dot.svg") 12 12, auto
 }
 
 /* FONT STYLES */
@@ -131,21 +132,80 @@ nav ul a.current{
 }
 
 /* TEAM GRID SECTION */
-.team-bio{
-    border:1px solid #ccc;
+
+.team-grid{
+    flex-wrap: wrap;
+    overflow: initial;
 }
+
+@media (max-width:767px){
+    .team-grid{
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+}
+
+.team-bio__image{
+    margin:0px;
+    overflow: hidden;
+    position: relative;
+}
+.team-bio__image:after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-2);
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+
 .team-bio__image img{
     object-fit:cover;
     width:100%;
     height:100%;
     aspect-ratio:1;
+    transition: all .6s ease;
+    filter: grayscale(1);
 }
 .team-bio__info{
+    font-size: 0.85rem;
+    /* min-height to allow for at least three rows rot name + title */
+    min-height: 140px;
     text-transform:uppercase;
     text-align: center;
-    margin-bottom: 1.5rem;
+    position: relative;
+    border:1px solid #fff;
 }
-
+.team-bio__name, .team-bio__title{
+    position: relative;
+    z-index: 2;
+    transition: color .3s ease .1s;
+}
+.team-bio__background{
+    background-color: white;
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:0%;
+    transition: all .3s ease;
+}
+.team-bio:hover .team-bio__background{
+    height: 100%;
+}
+.team-bio:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.team-bio:hover .team-bio__name, .team-bio:hover .team-bio__title{
+    color:var(--color-2);
+}
+.team-bio:hover .team-bio__image:after{
+    opacity: 0.6;
+}
 
 /* BUTTONS */
 .btn.btn-outline-custom{
@@ -202,4 +262,14 @@ nav ul a.current{
 }
 .pb-xl{
     padding-bottom:9rem;
+}
+.py-lg{
+    padding-top:6rem;
+    padding-bottom:6rem;
+}
+.pt-lg{
+    padding-top:6rem;
+}
+.pb-lg{
+    padding-bottom:6rem;
 }
