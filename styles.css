@@ -45,8 +45,23 @@ header{
     }
 }
 
-#logo{
+
+.logo figure{
     margin-bottom:0px;
+}
+.logo .brand-name{
+    font-size: 2rem;
+    font-weight: 100;
+    background: -webkit-linear-gradient(#44a5cd, #51c4c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: none;
+}
+
+@media (min-width:500px){
+    .logo .brand-name{
+        display: block;
+    }
 }
 
 header nav ul{
