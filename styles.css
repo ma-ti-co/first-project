@@ -149,12 +149,16 @@ nav ul a.current{
 
 /* BUTTONS */
 .btn.btn-outline-custom{
-    border-radius: 0px;
+    text-transform: uppercase;
+    border-radius: 2px;
     border: 1px solid var(--color-4);
     position: relative;
+    font-weight: 600;
+    padding:0.75rem 1rem;
 }
 .btn.btn-outline-custom span{
     display: block;
+    font-size: 0.8rem;
     z-index: 2;
     position: relative;
     color:var(--color-4);
@@ -185,7 +189,7 @@ nav ul a.current{
 /* UTILITIES */
 .separator{
     background-color: var(--color);
-    height: 2px;
+    height: var(--height);
     width: var(--width)!important;
     margin: auto;
 }
