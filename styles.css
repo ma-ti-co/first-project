@@ -305,7 +305,66 @@ nav ul a.current{
     padding-bottom:6rem;
 }
 
+
 /* VIDEO PLAYER */
 .watchourstory{
     padding-top: 15%;
+}
+
+
+
+/* EXPERTISE */
+.expertise{
+    border: rgb(232, 232, 232) solid 1px;
+    border-radius: 5px;
+    text-align: center;
+    height: 200px;
+    padding:10px;
+    padding-top: 25px;
+}
+
+.expertise-boxes{
+    flex-direction: row;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.expertise-info{
+    font-size: 0.85rem;
+    /* from team bio info -- min-height to allow for at least three rows rot name + title */
+    min-height: 140px;
+    text-align: center;
+    position: relative;
+    border:1px solid #fff;
+    text-transform: none;
+}
+
+.expertise-areas{
+    font-size: 0.85rem;
+    /* from team bio info -- min-height to allow for at least three rows rot name + title */
+    min-height: 32px;
+    text-align: center;
+    position: relative;
+    border:1px solid #fff;
+    text-transform:uppercase;
+}
+
+.expertise-icons img {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+  }
+
+.mobile-icon{
+    display: block;
+    margin: 0 auto;
+    width: 56%;
+    padding-bottom: 10px;
+}
+
+.gameboy{
+    display: block;
+    margin: 0 auto;
+    width: 82%;
+    padding-bottom: 15px;
 }
