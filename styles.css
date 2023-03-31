@@ -315,8 +315,7 @@ nav ul a.current{
 
 /* EXPERTISE */
 .expertise{
-    border: rgb(232, 232, 232) solid 1px;
-    border-radius: 5px;
+   
     text-align: center;
     height: 200px;
     padding:10px;
@@ -337,6 +336,7 @@ nav ul a.current{
     position: relative;
     border:1px solid #fff;
     text-transform: none;
+    color:rgb(149, 149, 149)
 }
 
 .expertise-areas{
@@ -353,12 +353,14 @@ nav ul a.current{
     display: block;
     margin: 0 auto;
     width: 15%;
+    padding-top:4px;
+    padding-bottom:4px;
   }
 
 .mobile-icon{
     display: block;
     margin: 0 auto;
-    width: 56%;
+    width: 55%;
     padding-bottom: 10px;
 }
 
@@ -366,5 +368,6 @@ nav ul a.current{
     display: block;
     margin: 0 auto;
     width: 82%;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
 }
+
