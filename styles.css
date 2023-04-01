@@ -307,29 +307,40 @@ nav ul a.current{
     -webkit-appearance: none;
 }
 
-.playcontainer:hover {
-    filter: brightness(80%);
+.playcontainer svg, .playcontainer image, .playcontainer #outline{
+    transition:all .6s ease;
+    color:white;
 }
 
-.playcontainer:hover #outline,
-.playcontainer:hover #play {
-    filter: brightness(80%);
-    stroke: #ccc;
-    transition: filter 0.5s ease-in-out, stroke 0.5s ease-in-out, opacity 0.5s ease-in-out;  
+.playcontainer image{
+    transform-origin:center;
+}
+.playcontainer #outline{
+    fill:transparent;
+}
+.playcontainer:hover svg {
+    transform:scale(1.1);
+    color:var(--color-4);
+}
+.playcontainer:hover #outline{
+    fill:var(--color-4);
+    stroke:var(--color4);
+}
+.playcontainer:hover image{
+    transform:scale(0.5);
+}
+.playcontainer:hover text {
+    color:var(--color-4);
 }
 
-.playcontainer:hover #play {
-    opacity: 0.7;
-}
-
-.playcontainer #text {
+/* .playcontainer #text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     font-size: 1.2rem;
-}
+} */
 
 .playcontainer #image {
     display: block;
