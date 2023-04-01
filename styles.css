@@ -296,18 +296,24 @@ nav ul a.current{
 /* VIDEO PLAYER */
 .watchourstory{
     padding-top: 15%;
+    color: white;
 }
 
 .playcontainer {
     position: relative;
     display: inline-block;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
 }
 
 .playcontainer:hover {
     filter: brightness(80%);
 }
 
-.playcontainer:hover #outline {
+.playcontainer:hover #outline,
+.playcontainer:hover #play {
+    filter: brightness(80%);
     stroke: #ccc;
 }
 
@@ -335,7 +341,7 @@ nav ul a.current{
 }
 
 .playcontainer #text:hover {
-    color: #252525;
+    color: #ccc;
 }
 
 .playcontainer #text:hover + #image {
