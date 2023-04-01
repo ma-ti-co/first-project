@@ -15,6 +15,399 @@
     <title>tajam</title>
 </head>
 <body>
-    <!-- DONT TOUCH FOR NOW -->
+    <!-- HEADER -->
+    <header>
+        <span id="scrollTop"></span>
+        <div class="container">
+             <div class="row">
+                 <div class="col-6 col-sm-4">
+                    <div class="logo d-flex align-items-center">
+                     <figure>
+                         <img src="./design-assets/png/logo.png" />
+                     </figure>
+                     <span class="brand-name ms-3">tajam</span>
+                    </div>
+                 </div>    
+                 <nav class="col-6 col-sm-8">
+                    <button id="nav-toggle" class="btn md-hidden">Menu</button>
+                    <ul>
+                        <li><a class="current" href="">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#team">Teams</a></li>
+                        <li><a href="">Works</a></li>
+                        <li><a href="">People Say</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                 </nav>
+             </div>
+     </header>
+     <!-- HEADER END -->
+     <!-- HERO -->
+    <section class="stage w-100" style="--height:90vh;background-image: url('./design-assets/bgk-header.png');">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100">
+                <div class="stage__inner col-lg-10 h-100 text-white text-center">
+                    <div>
+                        <h1>We Are Awesome Creative Agency</h1>
+                        <div class="separator mt-5 mb-5" style="--color:var(--color-3);--width:50px;--height:2px;"></div>
+                        <div class="stage__text mb-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus debitis id, 
+                        doloremque inventore ex voluptatum dolores dicta dolor atque eius, mollitia sit itaque 
+                        aspernatur distinctio. Ratione quibusdam inventore optio.
+                        </div>
+                        <div>
+                            <a class="btn btn-outline-custom">
+                                <span>Show More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO END -->
+    <!-- STORY -->
+    <section id="about" class="story py-xl">
+        <div class="container">
+            <div class="row">
+                <div class="story__logo col-md-5 col-lg-4 offset-lg-1 mb-5">
+                    <figure>
+                        <img src="./design-assets/png/logo-big.png">
+                    </figure>
+                </div>
+                <div class="col-md-7">
+                    <h2>Our Story</h2>
+                    <div class="story__richtext my-5">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corrupti ex labore nihil at 
+                            sunt harum adipisci voluptate, nisi magnam ipsa, architecto suscipit. Minus similique provident 
+                            autem minima veritatis? Adipisci!
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corrupti ex labore nihil at 
+                            sunt harum adipisci voluptate, nisi magnam ipsa, architecto suscipit. Minus similique provident 
+                            autem minima veritatis? Adipisci!
+                        </p>
+                    </div>
+                        <div>
+                            <a class="btn btn-outline-custom">
+                                <span>Show More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- STORY END -->
+    <!-- VIDEO -->
+    <section class="stage w-100" style="--height:90vh;background-image: url('./design-assets/bgk-middle.png');">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100">
+                <div class="stage__inner col-lg-10 h-100 text-white text-center">
+                    
+                    <button class="btn__play">
+                        <svg id="Play_Icon" data-name="Play Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="103" viewBox="0 0 103 103">
+                            <defs>
+                              <style>
+                                .cls-1 {
+                                  stroke-width: 3px;
+                                }
+                              </style>
+                            </defs>
+                            <circle id="outline" class="cls-1" cx="51.5" cy="51.5" r="50" stroke="currentColor"/>
+                            <image id="play" x="36.5" y="28.5" width="37" height="45" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAMAAAAeE1JcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABiVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAABW8sWSAAAAgXRSTlMAGsXst0G0mA716GD3J/L+uOd/PA2x1EVlUtueE2MCgu5kKrstVd+EBdhKtqUXV+PwaQqMvDIuiAFf5NdPpxk1uvNuXukPjwa+3iZi1v1czy8oiZILWMo7tfh0ha0eWd0pso7COG+wHH5QTtmKBCWrM3trZkvVpBgJs+K97Z/GxEeRZk91AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAX9JREFUOMuF1WVTAlEUBuAXxMACxUKxQTBRMbCwAxM7ULELG1uM/efuPSsOKnv2fNmZnWfOuzcXOn2SIRlalSLJlZqmoYxCSekZvMqUlDJkcSpbMplzBDPlskqy5OVTu4JCThUB1mJyJTZ1VSo/ysqJVVSyCqhSYqvtrAIcNeScvILLSay2jlVybD25hkZWAU1uwZpbeIVWD7Vra2cV0GEm1+llFdDVLVhPL69isX0+VgH9A4INDvEKGB4RTt/PK4yOUaxnnFVy7IRg/kleAVPTM/LG01LwiY2spWbntHsFaBXc85xqXaAxLi5xY1ymZVpZ5eYrsCbM+gY3964ghW1ugVHbfmFCjp8XCdTOLjXac0FdfYftH8S//KusFGY8/N3+zxk6Us7QMdSV94RM6PTfcOLUWZjQ+QXU1eWV8tXXieY4pm5MtM9vE6+WrCLA3T01eniEqrI8KWHhO0BVmZ5fCAW9qujnjn61gynlvo9GwBb9O95sPILuPfrxqWHwBfmRtxqD1jGnAAAAAElFTkSuQmCC"/>
+                        </svg>
+                        <div class="watchourstory">
+                            <p class="text-uppercase">Watch our Story</p>
+                        </div> 
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIDEO END -->
+    <!-- EXPERTISE -->
+    <section id="expertise" class="stage" style="--height:auto;">
+
+        <div class="container py-5 text-black">
+            <div class="stage__subheader pt-5">
+                <h3 class="text-uppercase">expertise</h3>
+                <h6 class="text-serif pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            </div>
+            
+            <div class="separator mb-5 mt-3" style="--color:#ccc;--width:50px;--height:1px">
+            </div>
+        
+        <div class="expertise-boxes">
+
+            <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-4 expertise border-end border-bottom">
+                <figure class="expertise-icons">
+                    <img src="design-assets/png/screen.png" />
+                </figure>
+                <div class="expertise-areas">
+                    <strong>web design & development</strong>
+                </div>
+                <div class="expertise-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam nulla magni aperiam! 
+                </div>
+            </div>    
+
+            <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-4 expertise border-bottom border-end">
+                <figure class="expertise-icons">
+                    <img src="design-assets/png/pen.png" />
+                </figure>
+                <div class="expertise-areas">
+                    <strong>branding identity</strong>
+                </div>
+                <div class="expertise-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam nulla magni aperiam! 
+                </div>
+            </div> 
+
+            <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-4 expertise border-bottom">
+                <figure class="expertise-icons mobile-icon">
+                    <img src="design-assets/png/mobile.png" />
+                </figure>
+                 <div class="expertise-areas">
+                    <strong>mobile app</strong>
+                </div>
+                <div class="expertise-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam nulla magni aperiam! 
+                </div>
+            </div>    
+        
+            <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-4 expertise border-end">
+                <figure class="expertise-icons">
+                    <img src="design-assets/png/graph.png" />
+                </figure>
+                <div class="expertise-areas">
+                    <strong>search engine optimization</strong>
+                </div>
+                <div class="expertise-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam nulla magni aperiam! 
+                </div>
+            </div> 
+
+            <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-4 expertise border-end">
+                <figure class="expertise-icons gameboy">
+                    <img src="design-assets/png/gameboy.png" />
+                </figure>
+                <div class="expertise-areas">
+                    <strong>game development</strong>
+                </div>
+                <div class="expertise-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam nulla magni aperiam! 
+                </div>
+            </div>    
+
+            <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-4 expertise">
+                <figure class="expertise-icons">
+                    <img src="design-assets/png/heart.png" />
+                </figure>
+                <div class="expertise-areas">
+                    <strong>made with love</strong>
+                </div>
+                <div class="expertise-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam nulla magni aperiam! 
+                </div>
+            </div> 
+            
+        </div>
+        </div>  
+        </div>
+    </section>
+    <!-- EXPERTISE END -->
+    <!-- TEAM -->
+    <section id="team" class="stage" style="--height:auto;background-image: url('./design-assets/bgk-header.png');">
+        <div class="container py-5 text-white">
+            <div class="stage__subheader pt-5">
+                <h3 class="text-uppercase">Meet Our Amazing Team</h3>
+                <h6 class="text-serif pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corrupti ex labore nihil at sunt </h6>
+            </div>
+            <div class="separator mt-5" style="--color:#ccc;--width:50px;--height:1px"></div>
+            <div class="row team-grid pt-5">
+                <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="team-bio">
+                    <figure class="team-bio__image">
+                        <img src="./design-assets/team-placeholder.webp" />
+                    </figure>
+                    <div class="team-bio__info px-5 py-4">
+                        <div class="team-bio__name text-uppercase">
+                            <strong>SomeVeryLongName ToTestEdgeCase</strong>
+                        </div>
+                        <div class="team-bio__title text-position text-thin mt-1">
+                            Some Very Long Job Title For Testing
+                        </div>
+                        <div class="team-bio__background"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="team-bio">
+                    <figure class="team-bio__image">
+                        <img src="./design-assets/team-placeholder.webp" />
+                    </figure>
+                    <div class="team-bio__info px-5 py-4">
+                        <div class="team-bio__name text-uppercase">
+                            <strong>Art Vandelay</strong>
+                        </div>
+                        <div class="team-bio__title text-position text-thin mt-1">
+                            Latex Salesman
+                        </div>
+                        <div class="team-bio__background"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="team-bio">
+                    <figure class="team-bio__image">
+                        <img src="./design-assets/team-placeholder.webp" />
+                    </figure>
+                    <div class="team-bio__info px-5 py-4">
+                        <div class="team-bio__name text-uppercase">
+                            <strong>Art Vandelay</strong>
+                        </div>
+                        <div class="team-bio__name text-position text-thin mt-1">
+                            Latex Salesman
+                        </div>
+                        <div class="team-bio__background"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <div class="team-bio">
+                    <figure class="team-bio__image">
+                        <img src="./design-assets/team-placeholder.webp" />
+                    </figure>
+                    <div class="team-bio__info px-5 py-4">
+                        <div class="team-bio__name text-uppercase">
+                            <strong>Art Vandelay</strong>
+                        </div>
+                        <div class="team-bio__title text-position text-thin mt-1">
+                            Latex Salesman
+                        </div>
+                        <div class="team-bio__background"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row stage__bottom py-lg justify-content-center">
+                <div>
+                    <p>Become part of our dream team!</p>
+                </div>
+                <div>
+                    <a class="btn btn-outline-custom">
+                        <span>We are Hiring</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM END -->
+    <!-- FOOTER -->
+    <footer class="stage footer pb-lg"  style="--height:auto;background-image: url('./design-assets/bgk-footer.png');">
+        <div class="container text-white">
+            <div class="row justify-content-between py-5">
+                <div class="col-sm-6 col-md-5 col-xl-4 footer__left">
+                    <div class="logo d-flex align-items-center">
+                        <figure>
+                            <img src="./design-assets/png/logo.png" />
+                        </figure>
+                        <span class="brand-name ms-3">tajam</span>
+                       </div>
+                    <div class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quos, quod dolorum iure et sint similique 
+                        eligendi laboriosam quidem doloribus in est repudiandae laborum omnis pariatur perferendis molestiae. 
+                        Dolor, unde.
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 offset-md-2 offset-lg-0 col-xl-4 footer__center">
+                    <div>
+                        <div class="text-uppercase mb-5"><strong>Our Studio</strong></div>
+                        <div>
+                            <ul class="contact-information">
+                                <li class="contact-information__address mb-4">
+                                    <div>Lincoln Rd<br>
+                                    Peterborough, Cambridgeshire PE6 7JR
+                                    <br>
+                                    United Kingdom</div>
+                                </li>
+                                <li class="contact-information__phone">01733 253095
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4 footer__right">
+                    <div>
+                        <div class="text-uppercase mb-5"><strong>Stay In Touch</strong></div>
+                        <div class="subscription-form">
+                            <form class="d-flex" action="" method="post">
+                                <input type="text" placeholder="Your E-Mail" />
+                                <button>
+                                    <img src="./design-assets/png/paper122.png" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="socialmedia-links mt-3">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./design-assets/png/facebook.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./design-assets/png/twitter.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./design-assets/png/dribbble.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./design-assets/png/instagram.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./design-assets/png/gplus.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./design-assets/png/youtube.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__bottom mt-5">
+                <div class="col-12 col-sm-4 col-md-6">
+                    <ul>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                        <li>
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright-info col-12 col-sm-8 col-md-6">
+                    <div class=""><small>Copyright &copy; 2015 &ndash; Tajem Creative</small></div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- FOOTER END -->
+    <a class="btn__scroll-up" href="#scrollTop" aria-label="Scroll Up">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 4.929l-7.071 7.071c-0.391 0.391-0.391 1.023 0 1.414 0.391 0.391 1.023 0.391 1.414 0l5.657-5.657 5.657 5.657c0.391 0.391 1.023 0.391 1.414 0 0.391-0.391 0.391-1.023 0-1.414l-7.071-7.071c-0.391-0.391-1.023-0.391-1.414 0z" fill=""/>
+          </svg>
+    </a>
 </body>
 </html>
