@@ -312,6 +312,52 @@ nav ul a.current{
     padding-top: 15%;
 }
 
+.playcontainer {
+    position: relative;
+    display: inline-block;
+}
+
+.playcontainer:hover {
+    filter: brightness(80%);
+}
+
+.playcontainer:hover #outline {
+    stroke: #ccc;
+}
+
+.playcontainer:hover #play {
+    opacity: 0.7;
+}
+
+.playcontainer #text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.2rem;
+}
+
+.playcontainer #image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.playcontainer #image:hover + #text {
+    color: #ccc;
+}
+
+.playcontainer #text:hover {
+    color: #252525;
+}
+
+.playcontainer #text:hover + #image {
+    filter: brightness(70%);
+    stroke: #ccc;
+    opacity: 0.7;
+}
+
 
 
 /* EXPERTISE */
