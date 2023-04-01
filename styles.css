@@ -15,6 +15,7 @@ AVAILABLE IN 100, 400 (normal), 600
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    scroll-behavior: smooth;
     cursor:url("./design-assets/dot.svg") 12 12, auto
 }
 
