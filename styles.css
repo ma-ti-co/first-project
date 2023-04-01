@@ -548,3 +548,24 @@ footer .contact-information{
     color:white;
     text-decoration:none;
 }
+
+.footer__bottom ul a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:992px){
+    .footer__bottom ul li{
+        float: initial;
+    }
+}
+
+.copyright-info{
+    text-align: right;
+}
+
+@media (max-width:576px){
+    .copyright-info{
+        margin-top:2rem;
+        text-align: left;
+    }
+}
