@@ -296,64 +296,66 @@ nav ul a.current{
 /* VIDEO PLAYER */
 .watchourstory{
     padding-top: 15%;
+    color: white;
 }
 
-.playcontainer {
+.btn__play {
     position: relative;
     display: inline-block;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
 }
 
-.playcontainer:hover {
-    filter: brightness(80%);
+.btn__play:focus, .btn__play:focus-visible{
+    outline:none;
 }
 
-.playcontainer:hover #outline {
-    stroke: #ccc;
+.btn__play svg, .btn__play image, .btn__play #outline, .btn__play .watchourstory{
+    transition:all .6s ease;
+    color:white;
 }
 
-.playcontainer:hover #play {
-    opacity: 0.7;
+.btn__play image{
+    transform-origin:center;
+}
+.btn__play #outline{
+    fill:transparent;
+}
+.btn__play:hover svg, .btn__play:focus-visible svg {
+    transform:scale(1.1);
+    color:var(--color-4);
+}
+.btn__play:hover #outline, .btn__play:focus-visible #outline{
+    fill:var(--color-4);
+    stroke:var(--color4);
+}
+.btn__play:hover image, .btn__play:focus-visible image{
+    transform:scale(0.5);
+}
+.btn__play:hover .watchourstory, .btn__play:focus-visible .watchourstory{
+    color:var(--color-4);
 }
 
-.playcontainer #text {
+/* .btn__play #text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     font-size: 1.2rem;
-}
+} */
 
-.playcontainer #image {
+.btn__play #image {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.playcontainer #image:hover + #text {
-    color: #ccc;
-}
-
-.playcontainer #text:hover {
-    color: #252525;
-}
-
-.playcontainer #text:hover + #image {
-    filter: brightness(70%);
-    stroke: #ccc;
-    opacity: 0.7;
-}
 
 
 
 /* EXPERTISE */
-.expertise{
-   
-    text-align: center;
-    height: 200px;
-    padding:10px;
-    padding-top: 25px;
-}
 
 .expertise-boxes{
     flex-direction: row;
@@ -361,10 +363,14 @@ nav ul a.current{
     flex-wrap:wrap;
 }
 
+.expertise{
+   
+    text-align: center;
+    padding:2rem;
+}
+
 .expertise-info{
     font-size: 0.85rem;
-    /* from team bio info -- min-height to allow for at least three rows rot name + title */
-    min-height: 140px;
     text-align: center;
     position: relative;
     border:1px solid #fff;
@@ -374,8 +380,6 @@ nav ul a.current{
 
 .expertise-areas{
     font-size: 0.85rem;
-    /* from team bio info -- min-height to allow for at least three rows rot name + title */
-    min-height: 32px;
     text-align: center;
     position: relative;
     border:1px solid #fff;
@@ -404,3 +408,30 @@ nav ul a.current{
     padding-bottom: 14px;
 }
 
+@media only screen and (max-width: 991px) {
+    .expertise {
+      border: none !important;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+  .expertise-boxes {
+    justify-content: center !important;
+  }
+}
+
+ 
+    /* CONTACTS & CLIENTS */
+
+.zara-icon img {
+  width: 13%;
+}
+
+.client-icons img {
+    width: 125px;
+    height: 30px;
+}
+
+.ccrow{
+    margin-top: 50px;
+}
