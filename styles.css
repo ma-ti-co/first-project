@@ -361,13 +361,6 @@ nav ul a.current{
 
 
 /* EXPERTISE */
-.expertise{
-   
-    text-align: center;
-    height: 200px;
-    padding:10px;
-    padding-top: 25px;
-}
 
 .expertise-boxes{
     flex-direction: row;
@@ -375,10 +368,14 @@ nav ul a.current{
     flex-wrap:wrap;
 }
 
+.expertise{
+   
+    text-align: center;
+    padding:2rem;
+}
+
 .expertise-info{
     font-size: 0.85rem;
-    /* from team bio info -- min-height to allow for at least three rows rot name + title */
-    min-height: 140px;
     text-align: center;
     position: relative;
     border:1px solid #fff;
@@ -388,8 +385,6 @@ nav ul a.current{
 
 .expertise-areas{
     font-size: 0.85rem;
-    /* from team bio info -- min-height to allow for at least three rows rot name + title */
-    min-height: 32px;
     text-align: center;
     position: relative;
     border:1px solid #fff;
@@ -418,3 +413,17 @@ nav ul a.current{
     padding-bottom: 14px;
 }
 
+@media only screen and (max-width: 991px) {
+    .expertise {
+      border: none !important;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+  .expertise-boxes {
+    justify-content: center !important;
+  }
+}
+
+ 
+    
