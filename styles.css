@@ -182,17 +182,6 @@ nav ul a.current{
     overflow: hidden;
     position: relative;
 }
-.team-bio__image:after{
-    content:'';
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-2);
-    opacity: 0;
-    transition: opacity .6s ease;
-}
 
 .team-bio__image img{
     object-fit:cover;
@@ -234,9 +223,6 @@ nav ul a.current{
 }
 .team-bio:hover .team-bio__name, .team-bio:hover .team-bio__title{
     color:var(--color-2);
-}
-.team-bio:hover .team-bio__image:after{
-    opacity: 0.6;
 }
 
 /* BUTTONS */
