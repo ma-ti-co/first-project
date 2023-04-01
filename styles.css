@@ -421,4 +421,17 @@ nav ul a.current{
 }
 
  
-    
+    /* CONTACTS & CLIENTS */
+
+.zara-icon img {
+  width: 13%;
+}
+
+.client-icons img {
+    width: 125px;
+    height: 30px;
+}
+
+.ccrow{
+    margin-top: 50px;
+}
