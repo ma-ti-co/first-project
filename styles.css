@@ -32,6 +32,12 @@ strong, .text-strong{
     font-weight: 600;
 }
 
+input, textarea{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    color: black
+}
+
 /* NAVIGATION */
 header{
     position: absolute;
@@ -423,19 +429,46 @@ nav ul a.current{
 }
 
  
-    /* CONTACTS & CLIENTS */
+/* CONTACTS & CLIENTS */
 
-.zara-icon img {
-  width: 13%;
+.hd-pd{
+    padding-bottom: 12px;
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Playfair Display', serif;
 }
 
-.client-icons img {
-    width: 125px;
-    height: 30px;
+.contact-fields{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    border: 1px solid #cccccc;
 }
 
-.ccrow{
-    margin-top: 50px;
+
+
+.contact-fields::placeholder {
+    color: #999999;
+  }
+
+.sbmtbtn {
+    display: flex;
+    align-items: flex-start;
+    width: 86px;
+}
+
+
+
+.client-icon img{
+    width: 75%;
+    height: 75%;
+    object-fit:contain;
+}
+
+.clients-container{
+    padding: 0;
+
 }
 
 
