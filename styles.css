@@ -435,3 +435,116 @@ nav ul a.current{
 .ccrow{
     margin-top: 50px;
 }
+
+
+/* FOOTER */
+footer .contact-information{
+    list-style:none;
+}
+.contact-information__address, .contact-information__phone{
+    position:relative;
+}
+.contact-information__address:before{
+    content:'';
+    background-image: url('./design-assets/png/big104.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:-2em;
+    top:5px;
+    height:1em;
+    width: 1em;
+}
+.contact-information__phone:before{
+    content:'';
+    background-image: url('./design-assets/png/phone351.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:-2em;
+    top:5px;
+    height:1em;
+    width: 1em;
+}
+
+@media (max-width:1200px){
+    .footer__right{
+        margin-top:3rem;
+    }
+}
+
+@media (max-width:576px){
+    .footer__center{
+        margin-top:3rem;
+    }
+}
+
+.subscription-form input{
+    color: white;
+}
+.subscription-form input{
+    flex:2 0 auto;
+    margin-right:1rem;
+}
+.subscription-form button{
+    flex:1 0 auto;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(211, 211, 211, 0.32);
+    border: 0px;
+    border-radius: 2px;
+    position:relative;
+}
+
+.subscription-form button img{
+    position:relative;
+    z-index:2;
+}
+
+.subscription-form button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:0px;
+    width:100%;
+    background:var(--color-4);
+    transition:height .6s ease;
+}
+
+.subscription-form button:hover:after{
+    height:100%;
+}
+
+.contact-form input, .contact-form textarea{
+    margin-top: 1.5rem;
+}
+
+.subscription-form input{
+    color:black;
+    padding:0.5em 1em;
+}
+
+.socialmedia-links ul{
+    list-style:none;
+    padding:0px;
+    display:flex;
+}
+.socialmedia-links ul li{
+    float:left;
+    margin-right:1.5rem;
+}
+
+.footer__bottom ul{
+    list-style:none;
+    padding:0px;
+}
+.footer__bottom ul li{
+    float:left;
+    margin-right:2rem;
+}
+.footer__bottom ul a{
+    color:white;
+    text-decoration:none;
+}
