@@ -626,3 +626,16 @@ footer .contact-information{
         text-align: left;
     }
 }
+
+.btn__scroll-up{
+    background-color: var(--color-4);
+    padding:0.5rem;
+    border:1px solid transparent;
+    border-radius: 3px;
+    position: fixed;
+    bottom:1rem;
+    right:1rem;
+}
+.btn__scroll-up svg{
+    fill:var(--color-2);
+}
