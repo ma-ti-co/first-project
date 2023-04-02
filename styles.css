@@ -295,6 +295,12 @@ nav ul a.current{
 
 
 /* VIDEO PLAYER */
+.video-container{
+    aspect-ratio: 1.7777;
+    /* fallback for older browsers */
+    --width: 100vw;
+    height:calc(var(--width) / 1.7777);
+}
 .watchourstory{
     padding-top: 15%;
     color: white;
