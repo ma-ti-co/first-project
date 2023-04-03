@@ -37,7 +37,7 @@
                         <li><a href="#team">Teams</a></li>
                         <li><a href="">Works</a></li>
                         <li><a href="">People Say</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                  </nav>
              </div>
@@ -68,7 +68,7 @@
     </section>
     <!-- HERO END -->
     <!-- STORY -->
-    <section id="about" class="story py-xl">
+    <section id="about" class="story-section">
         <div class="container">
             <div class="row">
                 <div class="story__logo col-md-5 col-lg-4 offset-lg-1 mb-5">
@@ -77,7 +77,7 @@
                     </figure>
                 </div>
                 <div class="col-md-7">
-                    <h2>Our Story</h2>
+                    <h2 class="text-uppercase">Our Story</h2>
                     <div class="story__richtext my-5">
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corrupti ex labore nihil at 
@@ -221,8 +221,8 @@
                 <h3 class="text-uppercase">Meet Our Amazing Team</h3>
                 <h6 class="text-serif pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corrupti ex labore nihil at sunt </h6>
             </div>
-            <div class="separator mt-5" style="--color:#ccc;--width:50px;--height:1px"></div>
-            <div class="row team-grid pt-5">
+            <div class="separator mb-5 mt-3" style="--color:#ccc;--width:50px;--height:1px"></div>
+            <div class="row team-grid pt-2">
                 <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-3 mb-4">
                     <div class="team-bio">
                     <figure class="team-bio__image">
@@ -301,6 +301,92 @@
         </div>
     </section>
     <!-- TEAM END -->
+    <!-- CONTACT AND CLIENTS -->
+    <section id="contact" class="contact-section">
+        <div class="container text-center">
+            <div class="row justify-content-between">
+              
+                <div class="col-lg-6 ">
+                    <div class="hd-pd mb-5">
+                        <h3 class="text-uppercase text-serif">give us a good news</h3>
+                    </div>
+                    <form method="post">
+                        <input class="contact-fields" type="text" id="name" name="name" placeholder="Name" required />
+                        <input class="contact-fields" type="email" id="email" name="email" placeholder="Email" required />
+                        <input class="contact-fields" type="subject" id="subject" name="subject" placeholder="Subject" required />
+                        <textarea class="contact-fields" rows="6" placeholder="Your Message" required=""></textarea>
+                        <div>
+                            <button class="btn btn-outline-custom sbmtbtn">
+                                <span>submit</span>
+                            </button>
+                        </div>                  
+                    </form>
+                </div>
+
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="hd-pd mb-5 mt-5 mt-lg-0">
+                        <h3 class="text-uppercase text-serif">our happy client</h3>
+                    </div>
+
+
+                    <div class="row justify-content-between client-grid">
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class="col zara-icon client-icon">
+                            <img src="design-assets/png/Zara_Logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class="barneys client-icon">
+                            <img src="design-assets/png/1280px-Barneys_New_York_Logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Calvin_klein_logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class="converse client-icon">
+                            <img src="design-assets/png/Converse_logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/1280px-Levi's_logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Logo_of_Mango_(new).png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/1280px-Gucci_Logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/1280px-Logo_NIKE.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Puma_Logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Billabong.png" />
+                            </figure>
+                        </div>
+                </div>
+              
+            </div>
+        </div>
+    
+    </section>  
+    <!-- CONTACT AND CLIENTS END -->
     <!-- FOOTER -->
     <footer class="stage footer pb-lg"  style="--height:auto;background-image: url('./design-assets/bgk-footer.png');">
         <div class="container text-white">
@@ -385,7 +471,7 @@
             </div>
             <div class="row footer__bottom mt-5">
                 <div class="col-12 col-sm-4 col-md-6">
-                    <ul>
+                    <ul class="text-uppercase">
                         <li>
                             <a href="">Help</a>
                         </li>

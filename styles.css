@@ -165,6 +165,12 @@ nav ul a.current{
 }
 
 /* STORY SECTION */
+
+.story-section{
+    padding-top:6rem;
+    padding-bottom:6rem;
+}
+
 @media (max-width:900px) {
     .story__logo figure{
         text-align: center;
