@@ -32,6 +32,12 @@ strong, .text-strong{
     font-weight: 600;
 }
 
+input, textarea{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    color: black
+}
+
 /* NAVIGATION */
 header{
     position: absolute;
@@ -256,11 +262,11 @@ nav ul a.current{
     transition: all .3s ease;
 }
 
-.btn.btn-outline-custom:hover span{
+.btn.btn-outline-custom:hover span, .btn.btn-outline-custom:focus-visible span{
     color:var(--color-2);
 }
 
-.btn.btn-outline-custom:hover:after{
+.btn.btn-outline-custom:hover:after, .btn.btn-outline-custom:focus-visible:after{
     height:100%
 }
 
@@ -373,9 +379,36 @@ nav ul a.current{
 }
 
 .expertise{
-   
     text-align: center;
     padding:2rem;
+}
+
+@media (max-width:767px){
+    .expertise:not(:first-child){
+        border-top:1px solid #ccc;
+    }
+} 
+
+@media (min-width:768px) and (max-width:991px){
+    .expertise:nth-child(even){
+        border-left:1px solid #ccc;
+    }
+    .expertise:nth-child(3),
+    .expertise:nth-child(4){
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+    }
+}
+
+@media (min-width:992px){
+    .expertise:nth-child(2),
+    .expertise:nth-child(5){
+        border-left:1px solid #ccc;
+        border-right:1px solid #ccc;
+    }
+    .expertise:nth-child(-n + 3){
+        border-bottom:1px solid #ccc;
+    }
 }
 
 .expertise-info{
@@ -417,11 +450,11 @@ nav ul a.current{
     padding-bottom: 14px;
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     .expertise {
       border: none !important;
     }
-  }
+  } */
 
 @media only screen and (max-width: 767px) {
   .expertise-boxes {
@@ -430,19 +463,61 @@ nav ul a.current{
 }
 
  
-    /* CONTACTS & CLIENTS */
+/* CONTACTS & CLIENTS */
 
-.zara-icon img {
-  width: 13%;
+.contact-section{
+    padding-top:4rem;
+    padding-bottom:4rem;
 }
 
-.client-icons img {
-    width: 125px;
-    height: 30px;
+.hd-pd{
+    /* padding-bottom: 12px;
+    margin-top: 60px;
+    display: flex; */
+    text-align: left;
 }
 
-.ccrow{
-    margin-top: 50px;
+.contact-fields{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+
+.contact-fields::placeholder {
+    color: #999999;
+  }
+
+.sbmtbtn {
+    display: flex;
+    align-items: flex-start;
+    width: 86px;
+}
+
+.client-grid{
+    row-gap: 1rem;
+}
+
+.client-icon{
+    height:100%;
+    margin:0px;
+}
+
+
+.client-icon img{
+    width: 75%;
+    height: 75%;
+    object-fit:contain;
+}
+
+.clients-container{
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 60px;
+
 }
 
 
