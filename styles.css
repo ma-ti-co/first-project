@@ -488,6 +488,7 @@ nav ul a.current{
     align-items: flex-start;
     width: 100%;
     border: 1px solid #e6e5e5;
+    margin-bottom: 1.5rem;
 }
 
 .contact-fields::placeholder {
@@ -538,10 +539,13 @@ nav ul a.current{
     width: 86px;
 }
 
-.client-icon img{
+/* 
+MC: removed this.
+*/
+/* .client-icon img{
     width: 180%;
     height: 160%;
-}
+} */
 
 .clients-container{
     padding-bottom:13px;
