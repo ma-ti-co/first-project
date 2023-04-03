@@ -15,101 +15,83 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section>
+    <section class="contact-section">
         <div class="container text-center">
             <div class="row justify-content-between">
               
                 <div class="col-lg-6 ">
-                    <div class="hd-pd">
-                        <h4 class="text-uppercase">give us a good news</h4>
+                    <div class="hd-pd mb-5">
+                        <h4 class="text-uppercase text-serif">give us a good news</h4>
                     </div>
-                    <form>
-                        <input class="contact-fields" type="text" id="name" name="name" placeholder="Name" />
-                        <br />
-                        <input class="contact-fields" type="email" id="email" name="email" placeholder="Email" />
-                        <br />
-                        <input class="contact-fields" type="subject" id="subject" name="subject" placeholder="Subject" />
-                        <br />
-
-                        <textarea class="contact-fields" id="message" placeholder="Your Message" rows="6" name="message"></textarea>
-
-                        <br />
+                    <form method="post">
+                        <input class="contact-fields" type="text" id="name" name="name" placeholder="Name" required />
+                        <input class="contact-fields" type="email" id="email" name="email" placeholder="Email" required />
+                        <input class="contact-fields" type="subject" id="subject" name="subject" placeholder="Subject" required />
+                        <textarea class="contact-fields" rows="6" placeholder="Your Message" required=""></textarea>
                         <div>
-                            <a class="btn btn-outline-custom sbmtbtn">
+                            <button class="btn btn-outline-custom sbmtbtn">
                                 <span>submit</span>
-                            </a>
+                            </button>
                         </div>                  
                     </form>
                 </div>
-
-                <div class="col-lg-5 ">
-                    <div class="hd-pd">
-                        <h4 class="text-uppercase">our happy client</h4>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="hd-pd mb-5 mt-5 mt-lg-0">
+                        <h4 class="text-uppercase text-serif">our happy client</h4>
                     </div>
 
-                    <div class="container text-center no-gutters">
-                        <div class="row">
-                            <div class="col">
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon">
-                                    <img src="design-assets/png/Zara_Logo.png" />
-                                    </figure>
-                                </div>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon">
-                                    <img src="design-assets/png/1280px-Barneys_New_York_Logo.png" />
-                                    </figure>
-                                </div>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon">
-                                    <img src="design-assets/png/Calvin_klein_logo.png" />
-                                    </figure>
-                                </div>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon conle">
-                                    <img src="design-assets/png/Converse_logo.png" />
-                                    </figure>
-                                </div>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon conle">
-                                    <img src="design-assets/png/1280px-Levi's_logo.png" />
-                                    </figure>
-                                </div>
-                            </div>
-                       
-                            <div class="col gx-5">
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon">
-                                    <img src="design-assets/png/Logo_of_Mango_(new).png" />
-                                    </figure>
-                                </div>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon">
-                                    <img src="design-assets/png/1280px-Gucci_Logo.png" />
-                                    </figure>
-                                </div>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon nke">
-                                    <img src="design-assets/png/1280px-Logo_NIKE.png" />
-                                    </figure>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon pmbl">
-                                    <img src="design-assets/png/Puma_Logo.png" />
-                                    </figure>
-                                </div>
-                                <div class="col-lg-5 clients-container">
-                                    <figure class="client-icon pmbl">
-                                    <img src="design-assets/png/Billabong.png" />
-                                    </figure>
-                                </div>
-                            </div>
-                            
+
+                    <div class="row justify-content-between client-grid">
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class="col zara-icon client-icon">
+                            <img src="design-assets/png/Zara_Logo.png" />
+                            </figure>
                         </div>
-                    </div>
-
-
-
-
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class="barneys client-icon">
+                            <img src="design-assets/png/1280px-Barneys_New_York_Logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Calvin_klein_logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class="converse client-icon">
+                            <img src="design-assets/png/Converse_logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/1280px-Levi's_logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Logo_of_Mango_(new).png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/1280px-Gucci_Logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/1280px-Logo_NIKE.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Puma_Logo.png" />
+                            </figure>
+                        </div>
+                        <div class="col-4 col-lg-5 clients-container">
+                            <figure class=" client-icon">
+                            <img src="design-assets/png/Billabong.png" />
+                            </figure>
+                        </div>
                 </div>
               
             </div>

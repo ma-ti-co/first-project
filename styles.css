@@ -165,6 +165,12 @@ nav ul a.current{
 }
 
 /* STORY SECTION */
+
+.story-section{
+    padding-top:6rem;
+    padding-bottom:6rem;
+}
+
 @media (max-width:900px) {
     .story__logo figure{
         text-align: center;
@@ -262,11 +268,11 @@ nav ul a.current{
     transition: all .3s ease;
 }
 
-.btn.btn-outline-custom:hover span{
+.btn.btn-outline-custom:hover span, .btn.btn-outline-custom:focus-visible span{
     color:var(--color-2);
 }
 
-.btn.btn-outline-custom:hover:after{
+.btn.btn-outline-custom:hover:after, .btn.btn-outline-custom:focus-visible:after{
     height:100%
 }
 
@@ -465,12 +471,16 @@ nav ul a.current{
  
 /* CONTACTS & CLIENTS */
 
+.contact-section{
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+
 .hd-pd{
-    padding-bottom: 12px;
+    /* padding-bottom: 12px;
     margin-top: 60px;
-    display: flex;
-    align-items: flex-start;
-    font-family: 'Playfair Display', serif;
+    display: flex; */
+    text-align: left;
 }
 
 .contact-fields{
@@ -484,6 +494,42 @@ nav ul a.current{
     color: #919191;
     font-weight: 100;
     font-size: smaller;
+    margin-bottom: 1rem;
+}
+
+
+
+.contact-fields::placeholder {
+    color: #999999;
+  }
+
+.sbmtbtn {
+    display: flex;
+    align-items: flex-start;
+    width: 86px;
+}
+
+.client-grid{
+    row-gap: 1rem;
+}
+
+.client-icon{
+    height:100%;
+    margin:0px;
+}
+
+
+.client-icon img{
+    width: 75%;
+    height: 75%;
+    object-fit:contain;
+}
+
+.clients-container{
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 60px;
 }
 
 .sbmtbtn {
