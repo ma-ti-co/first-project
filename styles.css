@@ -108,9 +108,10 @@ header nav a{
     white-space: nowrap;
 }
 
-header nav a:hover{
+header nav a:hover, header nav a:focus-visible{
     color: white;
     text-decoration: underline;
+    outline:none;
 }
 
 nav ul a.current{
@@ -301,6 +302,12 @@ nav ul a.current{
 
 
 /* VIDEO PLAYER */
+.video-container{
+    aspect-ratio: 1.7777;
+    /* fallback for older browsers */
+    --width: 100vw;
+    height:calc(var(--width) / 1.7777);
+}
 .watchourstory{
     padding-top: 15%;
     color: white;
@@ -575,7 +582,7 @@ footer .contact-information{
     transition:height .6s ease;
 }
 
-.subscription-form button:hover:after{
+.subscription-form button:hover:after, .subscription-form button:focus-within:after{
     height:100%;
 }
 
@@ -616,7 +623,7 @@ footer .contact-information{
     opacity: 0;
     transition: all .3s ease;
 }
-.socialmedia-links ul li:hover:before{
+.socialmedia-links ul li:hover:before, .socialmedia-links ul li:focus-visible:before{
     opacity: 1;
 }
 
