@@ -521,8 +521,7 @@ nav ul a.current{
 
 
 .client-icon img{
-    width: 100px;
-    height: 100px
+    width: 75%;
     object-fit:contain;
 }
 
