@@ -315,7 +315,6 @@ nav ul a.current{
     height:calc(var(--width) / 1.7777);
 }
 .watchourstory{
-    padding-top: 15%;
     color: white;
 }
 
@@ -327,6 +326,20 @@ nav ul a.current{
     appearance: none;
     -webkit-appearance: none;
 }
+
+@media (max-width:900px){
+    .btn__play svg{
+        width:60px;
+        height:60px;
+    }
+}
+@media (min-width:901px){
+    .btn__play svg{
+        width:100px;
+        height:100px;
+    }
+}
+
 
 .btn__play:focus, .btn__play:focus-visible{
     outline:none;
